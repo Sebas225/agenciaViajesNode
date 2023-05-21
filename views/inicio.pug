@@ -1,0 +1,32 @@
+extends ./layout/index  
+
+block slider
+    .slider
+        h1 Rio de janeiro 
+        em aventura
+
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6
+                p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam earum nulla odit quae consequatur id illo sit eveniet, unde iusto porro officia officiis. Corrupti odit illo nulla temporibus ad omnis.Magnam provident repellat nam officia distinctio, quaerat, adipisci incidunt eos eveniet omnis, quidem optio obcaecati voluptates dolorem commodi illum tempore cumque. Ex accusamus quae quis consequatur optio dolore eligendi quam!
+                p Amet nam a exercitationem enim sunt perferendis, sapiente ratione excepturi facere illum.Est ducimus accusantium veritatis quo corrupti cupiditate.
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="imagen nosotros" class="img-fluid")
+
+        include ./layout/bloque_viajes 
+    
+    .descuento
+        .container
+            .row 
+                .col-md-6
+                    .contenido
+                        h3 5% de descuento
+                        p.titulo Viaje a Canada 
+                        p.fecha 20 de marzo de #{actualYear} - 28 de marzo de #{actualYear}
+
+
+    .container
+        h2.mt-5.text-center Testimoniales
+        include ./layout/bloque_testimoniales
